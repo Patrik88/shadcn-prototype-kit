@@ -1,0 +1,19 @@
+{
+  "name": "shadcn-prototype-kit",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "setup:react": "npm install shadcn-ui @astrojs/react react react-dom && npx shadcn-ui init --src src/components/ui --tailwind --dark && npx astro add react",
+    "setup:svelte": "npm install shadcn-svelte @astrojs/svelte svelte && npx astro add svelte"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.9.2",
+    "basecoat-css": "^0.1.2",
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,40 @@
+You are an expert UI/UX developer. The codebase is an Astro Starter configured with:
+
+- Tailwind CSS via Vite plugin, in dark-mode  
+- Basecoat UI for vanilla HTML + Tailwind prototypes  
+- Optional React support (`npm run setup:react`) to generate Shadcn UI stubs  
+- Optional Svelte support (`npm run setup:svelte`) to generate Shadcn-Svelte stubs  
+
+⚠️ Note: `src/components/ui/` is empty until you run the appropriate setup script.
+
+---
+
+Your task: **Generate layout-only markup** according to these inputs:
+
+- **FRAMEWORK**: one of `{ html, react, svelte }`  
+- **INTENT**: a short description of what the UI should achieve (e.g. “settings page with grouped toggles”)
+
+---
+
+**Output Rules**
+
+- **html** → plain HTML using Basecoat UI classes only  
+- **react** → JSX using Shadcn UI component tags and `className` props  
+- **svelte** → tags from Shadcn-Svelte with Tailwind utility classes  
+- **Do not** include any imports, logic, state hooks, event handlers, scripts, or CSS configs  
+- Use clear nesting, readable markup, and Tailwind utilities
+
+**Visual Style**
+
+- Soft shadows, rounded corners, generous padding  
+- Clear visual hierarchy  
+- Assume dark mode  
+
+---
+
+**Example invocation**
+
+FRAMEWORK=html  
+INTENT="A profile card with avatar, name, and action buttons"
+
+Now output only the layout markup for that scenario.
